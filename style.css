@@ -1,0 +1,51 @@
+.dark { background: #2d2d2d; color: white; }
+.light { background: #ffffff; color: black; }
+
+body { background: #ddd; margin: 0; padding: 0; font-family: monospace; }
+
+header { display: flex; justify-content: flex-start; align-items: center; }
+header .banner { text-align: center; }
+header .note { text-align: center; background: rgba(255, 255, 255, .5); border-radius: 6px; padding: 10px; width: 100%; margin-right: 10px; margin-top: 10px; }
+
+.cummon-packages { display: flex; flex-wrap: wrap; justify-content: center; }
+.packages { width: 300px; margin: 10px; border-radius: 6px; /*box-shadow: 0px 2px 5px #656565;*/ border: 1px solid #ddd; }
+.package-counter { background: none; position: absolute; width: 300px; display: flex; justify-content: flex-end; }
+.package-counter-dot { background: red; border: none; color: white; z-index: 1002; border-radius: 0 6px 0 6px; }
+.package-image { width: 300px; height: 180px; }
+.package-image-tag { width: 100%; height: 100%; border-radius: 6px 6px 0 0; }
+.package-name { position: absolute; background: rgba(0, 0, 0, .5); width: 280px; padding: 10px; margin-top: -35px; color: white; z-index: 1002; display: flex; justify-content: flex-start; }
+.package-name .left { width: 50%; }
+.package-name .right { width:  50%; text-align: right; }
+.package-flavour { width: 100%; display: flex; justify-content: center; border-radius: 0 0 6px 6px; }
+.package-flavour-button { border: none; width: 100%; padding: 0; border-radius: 0 0 6px 6px; display: flex; }
+.package-flavour-list { padding: 10px; position: absolute; width: 300px; z-index: 1003; /*box-shadow: 0px 2px 5px #656565;*/ border: 1px solid #ddd; border-radius: 6px; }
+.package-flavour-list-button { padding: 5px; width: 100%; height: 40px; border: none; }
+.package-flavour-list-button:hover { background: #ddd; }
+.package-flavour-label { padding: 10px 0; width: 70%; border-radius: 0 0 0 6px; }
+.package-flavour-guide { padding: 10px 0; background: red; width: 30%; color: white; padding: auto 10px; border-radius: 0px 0 6px 0; }
+
+.next { background: none; color: white; text-align: center; padding: 50px 0; }
+.next button { background: #00cf00; border: none; padding: 10px; min-width: 100px; border-radius: 6px; /*box-shadow: 0 2px 5px #656565;*/ border: 1px solid #ddd; color: white; }
+.next button:hover { background: #00aa00; }
+
+footer { width: 100%; text-align: center; padding-bottom: 50px; }
+footer .copyright { color: #bababa; padding-bottom: 10px; }
+footer .column { display: flex; justify-content: flex-start; color: #bababa; }
+footer .column .left { text-align: right; width: 47%; padding-right: 1%; }
+footer .column .center { text-align: center; width: 4%; }
+footer .column .right { text-align: left; width: 47%; padding-left: 1%; }
+footer .column .right a { text-decoration: none; color: #bababa; }
+footer .column .right a:hover { background: #ddd; color: black; border-radius: 4px; }
+
+.action { background: rgba(0, 0, 0, .2); width: 300px; height: 180px; position: absolute; display: flex; justify-content: center;
+	z-index: 1001; border-radius: 6px 6px 0 0; }
+.action-button { background: none; border: none; color: white; width: 100%; }
+.action-button:hover { background: rgba(0, 0, 0, .5); }
+.select { border-radius: 6px 6px 0 0; }
+.add { border-radius: 6px 0 0 0; }
+.less { border-right: none; border-left: none; }
+.cancel { border-radius: 0 6px 0 0; }
+.dimmer { background: none /*rgba(0, 0, 0, .5)*/; width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: 1000; }
+.hidden { display: none; }
+
+.custom-package { height: 100px; text-align: center; margin-top: 65px; }
